@@ -5,7 +5,7 @@ pipeline {   //everything is wrapped in this.
             }
       }
     triggers {
-        pollSCM '*/5 * * * *'  // means every 5 minutes
+        pollSCM '* * * * *'  // means every 5 minutes
     }
     stages {    // contain individual stages having 3 stage pipeline
         stage('Build') {
