@@ -4,9 +4,9 @@ pipeline {   //everything is wrapped in this.
             label 'docker-agent-alpine'   // specifying based on label.
             }
       }
-    triggers {
-        pollSCM '*/5 * * * *'  // means every 5 minutes
-    }
+    // triggers {
+    //     pollSCM '*/5 * * * *'  // means every 5 minutes
+    // }
     stages {    // contain individual stages having 3 stage pipeline
         stage('Build') {
             steps {
